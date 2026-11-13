@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Charcole Frenchies | French Bulldog Breeder in Aurora, Ontario</title>
+<meta name="description" content="Charcole Frenchies is a small CKC-member French Bulldog hobby breeder in Aurora, Ontario, raising a few exceptional Frenchies each year in our family home.">
+<meta property="og:title" content="Charcole Frenchies">
+<meta property="og:description" content="Small-batch French Bulldogs, raised with heart. CKC members in Aurora, Ontario.">
+<meta property="og:image" content="Charcole%20Frenchies%20Website%20Photos/02-Hero-and-Banner/01-hero-ellie-puppy-pink-bandana.jpg">
+<link rel="icon" type="image/png" href="Charcole%20Frenchies%20Website%20Photos/01-Logos/01-logo-header.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #262325;
+    --slate: #4A5B6B;
+    --body: #4D4A47;
+    --muted: #5E5A57;
+    --mist: #E6EBEF;
+    --paper: #F6F5F2;
+    --line: #E4E2DD;
+    --steel: #8FA1B2;
+    --pale: #D9DEE3;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: 'Nunito Sans', system-ui, sans-serif; color: var(--ink); background: var(--paper); }
+  img { display: block; max-width: 100%; }
+  a { color: var(--ink); }
+  a:hover { color: var(--slate); }
+  h1, h2, h3, .display { font-family: 'Quicksand', sans-serif; font-weight: 700; margin: 0; }
+  p { margin: 0; }
+  section[id], footer[id] { scroll-margin-top: 90px; }
+
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 96px 32px; }
+  .stack { display: flex; flex-direction: column; }
+  .center { align-items: center; text-align: center; }
+  .grid { display: grid; }
+  .eyebrow { font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700; color: var(--slate); }
+  .h2 { font-size: 40px; line-height: 1.15; }
+  .lead { font-size: 17px; line-height: 1.7; color: var(--body); }
+  .text-link { font-weight: 700; font-size: 16px; }
+
+  .btn { display: inline-block; text-decoration: none; font-weight: 700; padding: 15px 26px; border-radius: 999px; }
+  .btn-dark { background: var(--ink); color: #FFFFFF; }
+  .btn-dark:hover { background: var(--slate); color: #FFFFFF; }
+  .btn-light { background: #FFFFFF; color: var(--ink); }
+  .btn-light:hover { background: var(--mist); color: var(--ink); }
+  .btn-outline { color: #FFFFFF; padding: 13px 24px; border: 2px solid var(--steel); }
+  .btn-outline:hover { color: #FFFFFF; border-color: #FFFFFF; }
+
+  /* Header */
+  .site-header { background: #FFFFFF; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
+  .site-header .inner { max-width: 1200px; margin: 0 auto; padding: 18px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
+  .site-header nav { display: flex; flex-wrap: wrap; align-items: center; gap: 26px; font-size: 15px; font-weight: 600; }
+  .site-header nav a { text-decoration: none; }
+  .site-header nav .btn { padding: 12px 20px; }
+
+  /* Hero */
+  .hero { background: var(--ink); color: #FFFFFF; }
+  .hero .wrap { padding-top: 88px; padding-bottom: 88px; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 56px; align-items: center; }
+  .hero h1 { font-size: clamp(38px, 6vw, 56px); line-height: 1.08; }
+  .hero img { width: 100%; height: 440px; object-fit: cover; object-position: 55% 50%; border-radius: 28px; }
+
+  /* Litter banner */
+  .litter { background: var(--mist); }
+  .litter .wrap { padding-top: 34px; padding-bottom: 34px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; }
+  .avatar { width: 76px; height: 76px; object-fit: cover; border-radius: 999px; border: 3px solid var(--mist); }
+
+  /* Cards */
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 32px; }
+  .dog { background: var(--paper); border-radius: 24px; overflow: hidden; }
+  .dog img { width: 100%; height: 340px; object-fit: cover; }
+  .dog .body { padding: 28px; display: flex; flex-direction: column; gap: 8px; }
+  .dog h4 { font-family: 'Quicksand', sans-serif; font-size: 28px; font-weight: 700; margin: 0; }
+  .dog .coat { font-size: 15px; color: var(--slate); font-weight: 700; }
+  .dog .bio { font-size: 16px; line-height: 1.6; color: var(--body); }
+  .dog .dna { font-size: 13px; color: var(--muted); }
+  .group-title { font-size: 26px; color: var(--slate); }
+
+  .video { position: relative; aspect-ratio: 16 / 9; border-radius: 24px; overflow: hidden; background: var(--ink); }
+  .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+  .step { background: #FFFFFF; border: 1px solid var(--line); border-radius: 22px; padding: 30px; display: flex; flex-direction: column; gap: 12px; }
+  .step .num { font-family: 'Quicksand', sans-serif; font-size: 34px; font-weight: 700; color: var(--steel); }
+  .step h3 { font-family: 'Nunito Sans', sans-serif; font-size: 20px; }
+  .step p { font-size: 16px; line-height: 1.6; color: var(--body); }
+
+  /* Past puppies mosaic */
+  .mosaic { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); grid-auto-rows: 240px; grid-auto-flow: dense; gap: 18px; }
+  .mosaic img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; border-radius: 20px; }
+  .mosaic .big { grid-column: span 2; grid-row: span 2; }
+  @media (max-width: 520px) { .mosaic .big { grid-column: span 1; grid-row: span 1; } }
+
+  /* Testimonials */
+  .quote { margin: 0; background: #FFFFFF; border: 1px solid var(--line); border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 18px; }
+  .quote blockquote { margin: 0; font-family: 'Quicksand', sans-serif; font-size: 19px; line-height: 1.55; font-weight: 600; color: var(--ink); }
+  .quote figcaption { font-size: 15px; color: var(--body); }
+  .quote strong { color: var(--ink); }
+
+  /* Footer */
+  .site-footer { background: var(--ink); color: #FFFFFF; }
+  .site-footer a { color: var(--pale); }
+  .site-footer a:hover { color: #FFFFFF; }
+
+  @media (max-width: 720px) {
+    .wrap { padding: 64px 20px; }
+    .site-header .inner { padding: 14px 20px; }
+    .site-header nav { gap: 14px 18px; font-size: 14px; }
+    .h2 { font-size: 32px; }
+    .hero img { height: 320px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a href="#top" aria-label="Charcole Frenchies home"><img src="Charcole%20Frenchies%20Website%20Photos/01-Logos/01-logo-header.png" alt="Charcole Frenchies" style="height: 44px; width: auto"></a>
+    <nav aria-label="Main">
+      <a href="#about">About Us</a>
+      <a href="#parents">Meet the Crew</a>
+      <a href="#puppies">Available Puppies</a>
+      <a href="#guardian">Guardian Homes</a>
+      <a href="#past">Past Puppies</a>
+      <a href="#reviews">Testimonials</a>
+      <a href="#contact" class="btn btn-dark">Puppy Inquiries</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section id="top" class="hero">
+  <div class="wrap grid">
+    <div class="stack" style="gap: 22px">
+      <p style="font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: #B9C6D2; font-weight: 700">CKC members · Aurora, Ontario</p>
+      <h1>Small-batch French Bulldogs, raised with heart.</h1>
+      <p style="font-size: 19px; line-height: 1.6; color: var(--pale); max-width: 520px">We're a small hobby breeder north of Toronto, matching a few exceptional Frenchies each year with the families who'll love them.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 14px; padding-top: 8px">
+        <a href="#puppies" class="btn btn-light">See available puppies</a>
+        <a href="#contact" class="btn btn-outline">Join the waitlist</a>
+      </div>
+    </div>
+    <img src="Charcole%20Frenchies%20Website%20Photos/02-Hero-and-Banner/01-hero-ellie-puppy-pink-bandana.jpg" alt="Ellie, a French Bulldog puppy in a pink bandana, trotting toward the camera">
+  </div>
+</section>
+
+<section class="litter" aria-label="Upcoming litter">
+  <div class="wrap">
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px">
+      <div style="display: flex; align-items: center">
+        <img class="avatar" src="Charcole%20Frenchies%20Website%20Photos/02-Hero-and-Banner/02-litter-banner-kenya-circle.jpg" alt="Kenya" style="object-position: 50% 25%">
+        <img class="avatar" src="Charcole%20Frenchies%20Website%20Photos/02-Hero-and-Banner/03-litter-banner-oliver-circle.jpg" alt="Oliver" style="object-position: 50% 20%; margin-left: -18px">
+      </div>
+      <div class="stack" style="gap: 4px">
+        <p class="eyebrow">Upcoming litter</p>
+        <p class="display" style="font-size: 26px">Kenya × Oliver — puppies expected January 2027</p>
+      </div>
+    </div>
+    <a href="#contact" class="btn btn-dark" style="padding: 14px 24px">Reserve your spot</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap grid" style="grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 56px; align-items: center">
+    <img src="Charcole%20Frenchies%20Website%20Photos/03-About-Us/01-about-family-under-willow-tree.jpg" alt="The family sitting on a blanket under a willow tree with their French Bulldogs and a litter of puppies" style="width: 100%; height: 380px; object-fit: cover; object-position: 50% 60%; border-radius: 28px">
+    <div class="stack" style="gap: 18px">
+      <p class="eyebrow">About us</p>
+      <h2 class="h2">It all started with Stanley.</h2>
+      <p class="lead">Our very first Frenchie’s affectionate, playful nature captured our hearts, and our breeding program grew from there. We named it after our boys, Charlie and Cole — hence the spelling.</p>
+      <p class="lead">As a boutique hobby breeder and proud CKC members in Aurora, Ontario, we raise every puppy in our home, surrounded by the sights and sounds of family life. We believe in quality over quantity — and when you bring home one of our pups, you become part of our extended family for life.</p>
+      <a href="#parents" class="text-link">Meet the crew →</a>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Life at home">
+  <div class="wrap grid" style="padding-top: 0; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 20px">
+    <img src="Charcole%20Frenchies%20Website%20Photos/03-About-Us/02-life-at-home-kissing-blue-eyed-puppy.jpg" alt="Kissing a blue-eyed puppy under the willow tree" style="width: 100%; height: 360px; object-fit: cover; object-position: 50% 55%; border-radius: 24px">
+    <img src="Charcole%20Frenchies%20Website%20Photos/03-About-Us/03-life-at-home-cuddling-three-puppies.jpg" alt="Cuddling three puppies at once" style="width: 100%; height: 360px; object-fit: cover; object-position: 55% 50%; border-radius: 24px">
+    <img src="Charcole%20Frenchies%20Website%20Photos/03-About-Us/04-life-at-home-three-frenchies-in-sweaters.jpg" alt="Three French Bulldogs in sweaters waiting for a treat" style="width: 100%; height: 360px; object-fit: cover; object-position: 45% 70%; border-radius: 24px">
+  </div>
+</section>
+
+<section id="parents" style="background: #FFFFFF">
+  <div class="wrap stack" style="gap: 40px">
+    <div class="stack center" style="gap: 10px">
+      <p class="eyebrow">Meet the crew</p>
+      <h2 class="h2">The Frenchies who call our home theirs</h2>
+    </div>
+
+    <div class="stack" style="gap: 20px">
+      <h3 class="group-title">Our Girls</h3>
+      <div class="card-grid">
+        <article class="dog">
+          <img src="Charcole%20Frenchies%20Website%20Photos/04-Meet-the-Crew-Girls/01-kenya.jpg" alt="Kenya, a French Bulldog, sitting on a sofa" style="object-position: 50% 30%">
+          <div class="body">
+            <h4>Kenya</h4>
+            <p class="coat">New shade isabella</p>
+            <p class="bio">The lone girl from our Africa litter. From the moment we first saw her, we knew she was destined for our program.</p>
+            <p class="dna">DNA: at/a, b/b, co/co, d/d, EM/E, I/i, ky/ky</p>
+          </div>
+        </article>
+        <article class="dog">
+          <img src="Charcole%20Frenchies%20Website%20Photos/04-Meet-the-Crew-Girls/02-hennessy.jpg" alt="Hennessy, a blue French Bulldog, resting her chin on a raised dog bed" style="object-position: 50% 50%">
+          <div class="body">
+            <h4>Hennessy</h4>
+            <p class="coat">Blue brindle</p>
+            <p class="bio">Wonderfully affectionate and a natural, devoted mother. Hennessy welcomed her very first litter in October 2026.</p>
+            <p class="dna">DNA: ay/ay, S/s, Co/co, d/d, EM/E</p>
+          </div>
+        </article>
+        <article class="dog">
+          <img src="Charcole%20Frenchies%20Website%20Photos/04-Meet-the-Crew-Girls/03-beatrice.jpg" alt="Beatrice, a French Bulldog in a purple harness, standing among garden plants" style="object-position: 45% 40%">
+          <div class="body">
+            <h4>Beatrice</h4>
+            <p class="coat">Lilac and tan</p>
+            <p class="bio">The sweetest little thing — Beatrice captured our hearts from the very moment she was born.</p>
+            <p class="dna">DNA: results coming soon</p>
+          </div>
+        </article>
+        <article class="dog">
+          <img src="Charcole%20Frenchies%20Website%20Photos/04-Meet-the-Crew-Girls/04-mocha.jpg" alt="Mocha, a French Bulldog, lying on a wooden floor" style="object-position: 50% 40%">
+          <div class="body">
+            <h4>Mocha</h4>
+            <p class="coat">New shade isabella and tan · Fluffy carrier</p>
+            <p class="bio">Spunky and full of fun! Mocha lives for her walks and her toys, and can happily keep herself entertained for hours.</p>
+            <p class="dna">DNA: at/a, b/b, co/co, EM/EM, d/d, L/l4</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="stack" style="gap: 20px">
+      <h3 class="group-title">Our Boys</h3>
+      <div class="card-grid">
+        <article class="dog">
+          <img src="Charcole%20Frenchies%20Website%20Photos/05-Meet-the-Crew-Boys/01-sherman.jpg" alt="Sherman, an isabella French Bulldog, standing in autumn leaves" style="object-position: 50% 45%">
+          <div class="body">
+            <h4>Sherman</h4>
+            <p class="coat">Isabella · Stud</p>
+            <p class="bio">Named for Sherman the tank — a sturdy little powerhouse with a charming waddle.</p>
+            <p class="dna">DNA: at/a, b/b, Co/co, d/d, Em/Em, i/i, ky/ky</p>
+          </div>
+        </article>
+        <article class="dog">
+          <img src="Charcole%20Frenchies%20Website%20Photos/05-Meet-the-Crew-Boys/02-tommy.jpg" alt="Tommy, a French Bulldog in a light blue harness, standing in a park" style="object-position: 50% 58%">
+          <div class="body">
+            <h4>Tommy</h4>
+            <p class="coat">New shade isabella · Stud</p>
+            <p class="bio">Hands-down the cutest puppy we’d ever seen. Compact, with a distinctive coat and a gentle, affectionate nature.</p>
+            <p class="dna">DNA: at/at, b/b, co/co, d/d, Em/E, I/i, ky/ky</p>
+          </div>
+        </article>
+        <article class="dog">
+          <img src="Charcole%20Frenchies%20Website%20Photos/05-Meet-the-Crew-Boys/03-boba-adult.jpg" alt="Boba, a blue French Bulldog, lying on a stone step in a black harness" style="object-position: 50% 45%">
+          <div class="body">
+            <h4>Boba</h4>
+            <p class="coat">Blue · Stud</p>
+            <p class="bio">Handsome, wonderfully squishy and laid-back — happiest with a sleep-in, a Netflix binge and his momma.</p>
+            <p class="dna">DNA: ay/a, d/d, EM/EM, n/kb</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="stack" style="gap: 20px">
+      <h3 class="group-title">Family &amp; Retired</h3>
+      <div class="card-grid">
+        <article class="dog">
+          <img src="Charcole%20Frenchies%20Website%20Photos/06-Meet-the-Crew-Family-and-Retired/01-stanley.jpg" alt="Stanley, a chocolate French Bulldog, wearing a red polka-dot tie" style="object-position: 50% 30%">
+          <div class="body">
+            <h4>Stanley</h4>
+            <p class="coat">Chocolate · Family dog</p>
+            <p class="bio">Our very first Frenchie, and the guy who started it all. Stanley truly has the best personality: affectionate, playful and so wonderfully human-like that some days we’d swear he understands every word we say.</p>
+          </div>
+        </article>
+        <article class="dog">
+          <img src="Charcole%20Frenchies%20Website%20Photos/06-Meet-the-Crew-Family-and-Retired/02-gracie.jpg" alt="Gracie, a French Bulldog, looking up" style="object-position: 50% 30%">
+          <div class="body">
+            <h4>Gracie</h4>
+            <p class="coat">Reverse blue brindle · Retired</p>
+            <p class="bio">The originator of our program and an exceptional mother. Retired now, she’ll live out her days with us, still bringing laughter every day.</p>
+          </div>
+        </article>
+        <article class="dog">
+          <img src="Charcole%20Frenchies%20Website%20Photos/06-Meet-the-Crew-Family-and-Retired/03-ellie-pink-pom-pom-hat.jpg" alt="Ellie in a pink knit pom-pom hat" style="object-position: 50% 30%">
+          <div class="body">
+            <h4>Ellie</h4>
+            <p class="coat">Blue and tan · Retired</p>
+            <p class="bio">“Ellie Belly” — a petite California girl, just under 20 lbs, usually found curled up cozily in your lap.</p>
+            <p class="dna">DNA: at/a, B/b, Co/co, d/d, Em/n, ky/ky</p>
+          </div>
+        </article>
+        <article class="dog">
+          <img src="Charcole%20Frenchies%20Website%20Photos/06-Meet-the-Crew-Family-and-Retired/04-kiki-side-profile.jpg" alt="Kiki, a blue brindle French Bulldog in a paisley bandana, in side profile" style="object-position: 50% 38%">
+          <div class="body">
+            <h4>Kiki</h4>
+            <p class="coat">Blue brindle · Retired</p>
+            <p class="bio">Gracie’s daughter, fondly called “Miss Sad Eyes.” She loves sticks (the bigger the better) and greets every person and pup with open arms.</p>
+            <p class="dna">DNA: ay/a, Co/co, d/d, EM/n, n/kb</p>
+          </div>
+        </article>
+        <article class="dog">
+          <img src="Charcole%20Frenchies%20Website%20Photos/06-Meet-the-Crew-Family-and-Retired/05-monica.jpg" alt="Monica, a blue and tan French Bulldog, resting her paw on the back of a sofa" style="object-position: 60% 40%">
+          <div class="body">
+            <h4>Monica</h4>
+            <p class="coat">Blue and tan · Retired</p>
+            <p class="bio">From our Yellowstone litter — endlessly sweet, with an impeccable temperament and cream and pied genetics.</p>
+            <p class="dna">DNA: at/a, Co/co, d/d, E/e, Em/N, S/s, ky/ky</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px; background: var(--mist); border-radius: 24px; padding: 20px">
+      <img src="Charcole%20Frenchies%20Website%20Photos/06-Meet-the-Crew-Family-and-Retired/06-sisu-circle.jpg" alt="Sisu, a French Bulldog, sitting and smiling" style="width: 120px; height: 120px; object-fit: cover; object-position: 50% 25%; border-radius: 999px">
+      <div class="stack" style="flex: 1 1 260px; gap: 6px">
+        <p class="eyebrow">Forever part of the crew</p>
+        <h3 style="font-size: 24px">Sisu</h3>
+        <p style="font-size: 16px; line-height: 1.6; color: var(--body)">Sisu now lives with a wonderful, loving family — and she’s living her best life.</p>
+      </div>
+    </div>
+
+    <div class="stack" style="gap: 20px; padding-top: 16px">
+      <div class="stack" style="gap: 6px">
+        <p class="eyebrow">Our studs in action</p>
+        <h3 style="font-size: 30px">Sherman &amp; Tommy</h3>
+        <p style="font-size: 16px; line-height: 1.6; color: var(--body); max-width: 720px">Both of our boys were sired by Golden Child from Blue Buddah Frenchies. We are incredibly proud of the strong foundation they bring to every litter.</p>
+      </div>
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 24px">
+        <div class="video">
+          <iframe src="https://player.vimeo.com/video/1056445570?badge=0&amp;byline=0&amp;h=81a0bd5cdf&amp;portrait=0&amp;title=0" title="Sherman and Tommy video 1" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video">
+          <iframe src="https://player.vimeo.com/video/1105205905?badge=0&amp;byline=0&amp;h=e96004b355&amp;portrait=0&amp;title=0" title="Sherman and Tommy video 2" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="guardian" style="background: var(--mist)">
+  <div class="wrap grid" style="grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 56px; align-items: center">
+    <div class="stack" style="gap: 18px">
+      <p class="eyebrow">Guardian Home Program</p>
+      <h2 class="h2">Every one of our dogs deserves a family of their own.</h2>
+      <p class="lead">Guardian homes are an important part of our program. As we continue to grow, they make sure each of our breeding dogs gets to live their best life: at home with a family who adores them, with a couch to call their own and plenty of one-on-one love.</p>
+      <p class="lead">In fact, most of our girls and boys currently live with guardian families, and we couldn’t be more grateful to the people who make that possible.</p>
+    </div>
+    <div class="stack" style="background: #FFFFFF; border-radius: 28px; padding: 40px; gap: 16px">
+      <h3 style="font-size: 26px">Curious about what a guardian home entails?</h3>
+      <p style="font-size: 16px; line-height: 1.7; color: var(--body)">Every so often, a puppy stands out with exceptional qualities that we’d love to keep in our breeding program. Rather than keeping them with us, we offer these extraordinary pups to approved guardian homes at a reduced price, so they can grow up as a cherished family dog while staying part of our program.</p>
+      <p style="font-size: 16px; line-height: 1.7; color: var(--body)">If you live in or around the GTA and would like to learn more, we’d love to hear from you.</p>
+      <a href="#contact" class="btn btn-dark" style="align-self: flex-start; margin-top: 6px">Ask about becoming a guardian</a>
+    </div>
+  </div>
+</section>
+
+<section id="puppies">
+  <div class="wrap stack" style="gap: 36px">
+    <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 18px">
+      <div class="stack" style="gap: 10px">
+        <p class="eyebrow">How it works</p>
+        <h2 class="h2">Bringing your Frenchie home</h2>
+      </div>
+      <a href="#contact" class="text-link">Start an inquiry →</a>
+    </div>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 24px">
+      <div class="step">
+        <span class="num">01</span>
+        <h3>Send an inquiry</h3>
+        <p>Tell us about your home and family so we can get to know you.</p>
+      </div>
+      <div class="step">
+        <span class="num">02</span>
+        <h3>Reserve your spot</h3>
+        <p>Once we’ve connected, a $500 deposit holds your place on the waitlist for an upcoming litter.</p>
+      </div>
+      <div class="step">
+        <span class="num">03</span>
+        <h3>Go-home day</h3>
+        <p>Every puppy goes home vet-checked, vaccinated, dewormed, microchipped and CKC-registered, with a 1-year health guarantee and a puppy care package.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="past" style="background: #FFFFFF">
+  <div class="wrap stack" style="gap: 36px">
+    <div class="stack center" style="gap: 10px">
+      <p class="eyebrow">From our past litters</p>
+      <p style="font-size: 17px; line-height: 1.6; color: var(--body); max-width: 620px">A few of the sweet faces we’ve raised and sent home to their forever families.</p>
+    </div>
+    <div class="mosaic">
+      <img class="big" src="Charcole%20Frenchies%20Website%20Photos/07-Past-Puppies/01-blue-puppy-red-plaid-shirt-FEATURED.jpg" alt="Blue puppy in a red plaid shirt, stepping forward against a teal backdrop" style="object-position: 45% 40%" loading="lazy">
+      <img src="Charcole%20Frenchies%20Website%20Photos/07-Past-Puppies/02-lilac-puppy-pumpkin-costume.jpg" alt="Lilac puppy in an orange pumpkin costume beside autumn leaves" loading="lazy">
+      <img src="Charcole%20Frenchies%20Website%20Photos/07-Past-Puppies/03-fawn-puppy-st-patricks-shamrock-beads.jpg" alt="Fawn puppy with blue eyes wearing green shamrock beads" style="object-position: 50% 30%" loading="lazy">
+      <img src="Charcole%20Frenchies%20Website%20Photos/07-Past-Puppies/04-fawn-puppy-pink-striped-shirt.jpg" alt="Fawn puppy with pale blue eyes in a pink striped shirt" style="object-position: 50% 40%" loading="lazy">
+      <img src="Charcole%20Frenchies%20Website%20Photos/07-Past-Puppies/05-fawn-puppy-yellow-chick-basket.jpg" alt="Fawn puppy peeking out of a yellow chick basket" loading="lazy">
+      <img src="Charcole%20Frenchies%20Website%20Photos/07-Past-Puppies/06-blue-puppy-velvet-crown-bed.jpg" alt="Blue puppy with blue eyes resting in a velvet crown bed" loading="lazy">
+      <img src="Charcole%20Frenchies%20Website%20Photos/07-Past-Puppies/07-newborn-blue-puppy-red-mug.jpg" alt="Newborn blue puppy asleep in a red mug" style="object-position: 55% 40%" loading="lazy">
+      <img src="Charcole%20Frenchies%20Website%20Photos/07-Past-Puppies/08-white-pied-puppy-pink-flower-collar.jpg" alt="White and blue pied puppy with a pink flower collar" style="object-position: 40% 35%" loading="lazy">
+      <img src="Charcole%20Frenchies%20Website%20Photos/07-Past-Puppies/09-lilac-tan-puppy-red-plaid-vest.jpg" alt="Lilac and tan puppy in a red plaid vest" loading="lazy">
+      <img src="Charcole%20Frenchies%20Website%20Photos/07-Past-Puppies/10-blue-puppy-pink-knit-sweater.jpg" alt="Blue puppy with blue eyes in a pink knit sweater" loading="lazy">
+      <img src="Charcole%20Frenchies%20Website%20Photos/07-Past-Puppies/11-blue-puppy-smiling-in-sunshine.jpg" alt="Blue puppy smiling in the sunshine" style="object-position: 50% 45%" loading="lazy">
+      <img src="Charcole%20Frenchies%20Website%20Photos/07-Past-Puppies/12-puppy-sherpa-chair-plaid-pillow.jpg" alt="Puppy sitting on a sherpa chair beside a plaid pillow" loading="lazy">
+      <img src="Charcole%20Frenchies%20Website%20Photos/07-Past-Puppies/13-blue-puppy-pearl-collar-blue-backdrop.jpg" alt="Blue puppy in a pearl collar looking up against a blue backdrop" style="object-position: 55% 40%" loading="lazy">
+      <img src="Charcole%20Frenchies%20Website%20Photos/07-Past-Puppies/14-three-lilac-newborns-sleeping.jpg" alt="Three lilac newborn puppies asleep side by side" style="object-position: 50% 50%" loading="lazy">
+      <img src="Charcole%20Frenchies%20Website%20Photos/07-Past-Puppies/15-lilac-newborn-held-up-autumn-trees.jpg" alt="Lilac newborn held up among autumn trees" loading="lazy">
+      <img src="Charcole%20Frenchies%20Website%20Photos/07-Past-Puppies/16-blue-white-newborn-cradled-in-hands.jpg" alt="Blue and white newborn puppy cradled in two hands" style="object-position: 50% 30%" loading="lazy">
+      <img src="Charcole%20Frenchies%20Website%20Photos/07-Past-Puppies/17-fawn-frenchie-wooden-floor.jpg" alt="Fawn Frenchie sitting on a wooden floor, looking up" style="object-position: 40% 30%" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap stack" style="gap: 36px">
+    <div class="stack center" style="gap: 10px">
+      <p class="eyebrow">From our families</p>
+      <h2 class="h2">Part of the family, for life</h2>
+    </div>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 24px">
+      <figure class="quote">
+        <blockquote>“The care and love they give to each and every puppy is like no other breeder I have ever seen. Stella has completed our family in ways we could have never imagined.”</blockquote>
+        <figcaption><strong>The Prentice Family</strong> · Stella &amp; Heineken</figcaption>
+      </figure>
+      <figure class="quote">
+        <blockquote>“Amy is the most dedicated and caring breeder. You can tell she loves her dogs. We are very blessed to have met Amy and to be a part of the Blue Charcole Frenchies family!”</blockquote>
+        <figcaption><strong>Blair &amp; Cindy</strong> · Barney’s family</figcaption>
+      </figure>
+      <figure class="quote">
+        <blockquote>“Gervais and Amy were truly wonderful to deal with. Elvis is happy and healthy, and they’ve been amazing at keeping in touch since we brought him home. A+++”</blockquote>
+        <figcaption><strong>Elvis’s family</strong></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer id="contact" class="site-footer">
+  <div class="wrap grid" style="padding-top: 80px; padding-bottom: 40px; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 48px; align-items: start">
+    <div class="stack" style="gap: 18px">
+      <img src="Charcole%20Frenchies%20Website%20Photos/01-Logos/02-logo-footer.png" alt="Charcole Frenchies" style="width: 220px; height: auto">
+      <p style="font-size: 15px; line-height: 1.6; color: var(--pale)">Quality French Bulldogs · CKC members · Aurora, Ontario</p>
+    </div>
+    <div class="stack" style="gap: 12px">
+      <h2 style="font-size: 26px">Thinking about a Frenchie?</h2>
+      <p style="font-size: 16px; line-height: 1.6; color: var(--pale)">Send an inquiry and we'll be in touch about upcoming litters.</p>
+      <!-- Replace href with your inquiry form link (e.g. a Google Form or Formspree URL) -->
+      <a href="#contact" class="btn btn-light" style="align-self: flex-start; padding: 14px 24px">Puppy inquiry form</a>
+    </div>
+    <div class="stack" style="gap: 10px; font-size: 16px">
+      <a href="tel:4169027021" style="color: #FFFFFF; text-decoration: none; font-weight: 700">416.902.7021</a>
+      <a href="https://www.instagram.com/bluecharcole_frenchies/">Instagram</a>
+      <a href="https://www.facebook.com/114448243732790">Facebook</a>
+    </div>
+  </div>
+  <div style="max-width: 1200px; margin: 0 auto; padding: 22px 32px 36px; border-top: 1px solid #3F3B3D; font-size: 14px; color: #A9B1B9">© 2026 Blue Charcole Frenchies</div>
+</footer>
+
+</body>
+</html>
